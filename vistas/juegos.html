@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/juegos.css">
+    <link rel="stylesheet" href="/css/idxresponsive.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/@heroicons/react@1.0.6/outline/index.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <script src="/script/juegos.js"></script>
+    <title>Chorge85 Gameplay</title>
+</head>
+<body>
+    <nav class="navbar">
+    <div class="nav-left">
+        <a href="https://www.youtube.com/@Chorge85" target="_blank" class="logo-link">
+            <img src="/recursos/Chorge85.png" alt="Logo" class="logo">
+        </a>
+        
+        <a href="/index.html" class="nav-item">
+            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+            </svg>
+            <span>Chorge85</span>
+        </a>
+        
+        <a href="/index.html" class="nav-item">
+            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+            </svg>
+            <span>Ultimas Noticias</span>
+        </a>
+        
+        <a href="/index.html" class="nav-item">
+            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>Donaciones</span>
+        </a>
+        
+        <a href="" class="nav-item">
+            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            <span>Arcade</span>
+        </a>
+    </div>
+    
+    <div class="nav-right">
+    </div>
+</nav>
+
+<header id="chorge85" class="chorge-header">
+    <div class="juegos-mobile-btn" style="display: none;">
+    <a href="/index.html" class="juego-link-mobile">
+        <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+        <span>Inicio</span>
+    </a>
+</div>
+<div class="contenedor-juegos">
+    <div class="juegocarta">
+        <img src="/recursos/pacman.avif" alt="Pac-Man" class="img">
+        <h2 class="carta">Game Pac-Man</h2>
+        <h3 class="cartah3">Solo Desktop</h3>
+        <button class="boton" 
+        data-juego="game" 
+        data-path="/juegos/pacman-master/index.html">Jugar</button>
+    </div>
+    <div class="juegocarta">
+        <img src="/recursos/pizza.png" alt="Pac-Man" class="img">
+        <h2 class="carta">Pizza Undelivery</h2>
+        <h3 class="cartah3">Solo Desktop</h3>
+        <button class="boton" 
+        data-juego="game" 
+        data-path="/juegos/pizza/index.html">Jugar</button>
+    </div>
+    <div class="juegocarta">
+        <img src="/recursos/tron.png" alt="Pac-Man" class="img">
+        <h2 class="carta">Tron Legacy 2D</h2>
+        <h3 class="cartah3">Solo Desktop</h3>
+        <button class="boton" 
+        data-juego="game" 
+        data-path="/juegos/tron/index.html">Jugar</button>
+    </div>
+    <div class="juegocarta">
+        <img src="/recursos/golf.jpg" alt="Pac-Man" class="img">
+        <h2 class="carta">Estangolf Game</h2>
+        <h3 class="cartah3">Desktop & Movil</h3>
+        <button class="boton" 
+        data-juego="game" 
+        data-path="/juegos/Golf/index.html">Jugar</button>
+    </div>
+    <div class="juegocarta">
+        <img src="/recursos/way out.png" alt="Pac-Man" class="img">
+        <h2 class="carta">Way Out Adventure</h2>
+        <h3 class="cartah3">Solo Desktop</h3>
+        <button class="boton" 
+        data-juego="game" 
+        data-path="/juegos/Way Out/index.html">Jugar</button>
+    </div>
+    <div class="juegocarta">
+        <img src="/recursos/oect.png" alt="Pac-Man" class="img">
+        <h2 class="carta">Offline OECT Game</h2>
+        <h3 class="cartah3">Solo Desktop</h3>
+        <button class="boton" 
+        data-juego="game" 
+        data-path="/juegos/Offline OECT/index.html">Jugar</button>
+    </div>
+    <div class="juegocarta">
+        <img src="/recursos/off the line.png" alt="Pac-Man" class="img">
+        <h2 class="carta">Off The Line - Game </h2>
+        <h3 class="cartah3">Solo Desktop</h3>
+        <button class="boton" 
+        data-juego="game" 
+        data-path="/juegos/off the line/index.html">Jugar</button>
+    </div>  
+    <div class="juegocarta">
+        <img src="/recursos/bird.jpg" alt="Pac-Man" class="img">
+        <h2 class="carta">Play Flappy Bird</h2>
+        <h3 class="cartah3">Desktop & Movil</h3>
+        <button class="boton" 
+        data-juego="game" 
+        data-path="/juegos/JS-Flappy-Bird-master/index.html">Jugar</button>
+    </div>  
+    
+    
+</div>
+<div id="contenedor-juego" class="contenedor-juego">
+    <div class="ventana-juego">
+        <button id="cerrar-juego" class="boton-cerrar">×</button>
+        <iframe id="frame-juego" class="frame-juego" frameborder="0"></iframe>
+    </div>
+</div>
+</header>
+
+<footer class="full-width-footer">
+    <div class="footer-content">
+
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h3>Acceso Rápido</h3>
+                <ul>
+                    <li><a href="#chorge85">Inicio</a></li>
+                    <li><a href="#noticias123">Noticias</a></li>
+                    <li><a href="#donaciones">Donaciones</a></li>
+                    <li><a href="#juegos">Juegos</a></li>
+                    <li><a href="#login">Iniciar Sesión</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Para los ChorgeAmikos</h3>
+                <p>¡Gracias por ser parte de esta comunidad!</p>
+                <p>Tu apoyo significa todo para mí. ¡Los quiero mucho ChorgeAmikos!</p>
+                <div class="hearts">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Sígueme</h3>
+                <div class="social-icons">
+                <a href="https://www.youtube.com/@Chorge85" class="social-icon youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/chorge85/" class="social-icon instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@chorge85" class="social-icon tiktok" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/share/1BYQ29Fqnp/" class="social-icon facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/chorge85" class="social-icon twitter" target="_blank"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.205 2.25h3.308l-7.227 8.26 8.502 11.24H16.13l-5.214-6.817L4.95 21.75H1.64l7.73-8.835L1.215 2.25H8.04l4.713 6.231zm-1.161 17.52h1.833L7.045 4.126H5.078z"/></svg></a>
+                <a href="https://www.twitch.tv/chorge85" class="social-icon twitch" target="_blank"><i class="fab fa-twitch"></i></a></a>
+                <a href="https://discord.gg/PUFXsE28" class="social-icon discord" target="_blank"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2023 Chorge85 Company. Todos los derechos reservados.</p>
+            <p class="signature">Yeah baby!</p>
+        </div>
+    </div>
+</footer>
+
+ <script async src="https://www.tiktok.com/embed.js"></script>
+ <script>
+        // Función para cambiar entre dark y light mode
+        document.getElementById('darkmodeToggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            
+            // Cambiar el icono y el texto
+            const icon = this.querySelector('.darkmode-icon');
+            const text = this.querySelector('.darkmode-text');
+            
+            if (document.body.classList.contains('dark-mode')) {
+                // Modo oscuro activado
+                icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />';
+                text.textContent = 'Modo claro';
+            } else {
+                // Modo claro activado
+                icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />';
+                text.textContent = 'Modo oscuro';
+            }
+            
+            // Guardar preferencia en localStorage
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        });
+        
+        // Verificar preferencia guardada al cargar la página
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+            const toggle = document.getElementById('darkmodeToggle');
+            toggle.querySelector('.darkmode-icon').innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />';
+            toggle.querySelector('.darkmode-text').textContent = 'Modo claro';
+        }
+    </script>
+    </body>
+</html>

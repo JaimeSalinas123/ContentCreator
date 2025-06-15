@@ -1,0 +1,252 @@
+/* ===== RESPONSIVE CSS COMPLETO ===== */
+
+/* Pantallas grandes (1200px en adelante) */
+@media (min-width: 1200px) {
+    .schedule-cards {
+        flex-wrap: nowrap;
+    }
+    .videos-container {
+        flex-wrap: nowrap;
+    }
+}
+
+/* Tablets y pantallas medianas (768px - 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .navbar {
+        padding: 1.5rem 2rem;
+    }
+    .nav-left {
+        gap: 1.5rem;
+    }
+    .schedule-cards {
+        gap: 30px;
+    }
+    .schedule-card {
+        max-width: 340px;
+    }
+    .video-box {
+        min-width: 45%;
+    }
+}
+
+/* Dispositivos móviles (hasta 767px) */
+@media (max-width: 767px) {
+    /* Navbar - Ocultar todo excepto el logo */
+    .navbar {
+        padding: 0.8rem;
+        justify-content: space-between;
+    }
+    .nav-left {
+        gap: 0;
+        width: auto;
+    }
+    .nav-item:not(.logo-link), .nav-right {
+        display: none;
+    }
+    
+    /* Header ajustado */
+    body {
+        padding-top: 80px;
+    }
+    .chorge-header {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .chorge-avatar {
+        width: 100px;
+        height: 100px;
+    }
+    
+    /* Botón de Juegos después de "YEAH BABY" */
+    .chorge-highlight {
+        position: relative;
+        margin-bottom: 1.5rem;
+    }
+    .juegos-mobile-btn {
+        display: flex !important;
+        justify-content: center;
+        margin: 1.5rem auto;
+    }
+    .juegos-mobile-btn a {
+        background: rgba(255, 51, 102, 0.3);
+        padding: 0.8rem 1.5rem;
+        border-radius: 30px;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: all 0.3s ease;
+    }
+    .juegos-mobile-btn a:hover {
+        background: rgba(255, 51, 102, 0.5);
+        transform: translateY(-3px);
+    }
+    
+    /* Resto de contenido */
+    .chorge-text h1 {
+        font-size: 1.8rem;
+    }
+    .chorge-highlight {
+        font-size: 1.5rem;
+    }
+    .redessociales {
+        gap: 15px;
+    }
+    .social-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        margin: 5px;
+    }
+    .schedule-cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .schedule-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+    .card-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .videos-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .video-box {
+        min-width: 100%;
+    }
+    .donaciones-section {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+    }
+    .donaciones-title {
+        font-size: 1.8rem;
+    }
+    .footer-columns {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .footer-col {
+        min-width: 100%;
+    }
+}
+
+/* Pantallas muy pequeñas (hasta 480px) */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+    .logo {
+        height: 40px;
+    }
+    body {
+        padding-top: 70px;
+    }
+    .chorge-text h1 {
+        font-size: 1.5rem;
+    }
+    .chorge-highlight {
+        font-size: 1.3rem;
+    }
+    .social-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+    }
+    .donaciones-title {
+        font-size: 1.5rem;
+    }
+    .paypal-button {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+    .mariochorge {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Ajustes para landscape */
+@media (max-width: 767px) and (orientation: landscape) {
+    body {
+        padding-top: 60px;
+    }
+    .navbar {
+        padding: 0.5rem;
+    }
+    .chorge-header {
+        padding: 0.5rem;
+    }
+    .chorge-avatar {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Ajustes para evitar desbordamientos */
+@media (max-width: 767px) {
+    .card-content h3,
+    .card-content p,
+    .donaciones-description,
+    .footer-col p {
+        word-wrap: break-word;
+    }
+}
+
+    /* Mostrar solo en móviles */
+    @media (max-width: 767px) {
+        .juegos-mobile-btn {
+            display: flex !important;
+            justify-content: center;
+            margin: 1.5rem 0;
+        }
+    }
+
+    /* Ocultar en desktop */
+    @media (min-width: 768px) {
+        .juegos-mobile-btn {
+            display: none !important;
+        }
+    }
+
+    /* Versión móvil */
+@media (max-width: 768px) {
+    #noticias {
+        padding: 15px;
+    }
+    
+    .noticia-imagen {
+        height: 200px;
+    }
+    
+    .noticia-titulo h3 {
+        font-size: 18px;
+        padding: 15px;
+    }
+    
+    .noticia-contenido {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .noticia-imagen {
+        height: 180px;
+    }
+    
+    .noticia-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .noticia-footer a {
+        width: 100%;
+        padding: 10px;
+    }
+}
