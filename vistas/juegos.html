@@ -50,6 +50,12 @@
     </div>
     
     <div class="nav-right">
+        <a href="/vistas/rankeds.html" class="nav-item">
+    <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+    </svg>
+    <span>Rankeds</span>
+</a>
     </div>
 </nav>
 
@@ -173,7 +179,8 @@
                 <a href="https://www.facebook.com/share/1BYQ29Fqnp/" class="social-icon facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://x.com/chorge85" class="social-icon twitter" target="_blank"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.205 2.25h3.308l-7.227 8.26 8.502 11.24H16.13l-5.214-6.817L4.95 21.75H1.64l7.73-8.835L1.215 2.25H8.04l4.713 6.231zm-1.161 17.52h1.833L7.045 4.126H5.078z"/></svg></a>
                 <a href="https://www.twitch.tv/chorge85" class="social-icon twitch" target="_blank"><i class="fab fa-twitch"></i></a></a>
-                <a href="https://discord.gg/PUFXsE28" class="social-icon discord" target="_blank"><i class="fab fa-discord"></i></a>
+                <a href="https://discord.gg/gZhtBkJF" class="social-icon discord" target="_blank"><i class="fab fa-discord"></i></a>
+                <a href="https://whatsapp.com/channel/0029Vao7NMZGJP8PpUIZN20h" class="social-icon whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
@@ -184,38 +191,5 @@
         </div>
     </div>
 </footer>
-
- <script async src="https://www.tiktok.com/embed.js"></script>
- <script>
-        // Función para cambiar entre dark y light mode
-        document.getElementById('darkmodeToggle').addEventListener('click', function() {
-            document.body.classList.toggle('dark-mode');
-            
-            // Cambiar el icono y el texto
-            const icon = this.querySelector('.darkmode-icon');
-            const text = this.querySelector('.darkmode-text');
-            
-            if (document.body.classList.contains('dark-mode')) {
-                // Modo oscuro activado
-                icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />';
-                text.textContent = 'Modo claro';
-            } else {
-                // Modo claro activado
-                icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />';
-                text.textContent = 'Modo oscuro';
-            }
-            
-            // Guardar preferencia en localStorage
-            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
-        });
-        
-        // Verificar preferencia guardada al cargar la página
-        if (localStorage.getItem('darkMode') === 'true') {
-            document.body.classList.add('dark-mode');
-            const toggle = document.getElementById('darkmodeToggle');
-            toggle.querySelector('.darkmode-icon').innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />';
-            toggle.querySelector('.darkmode-text').textContent = 'Modo claro';
-        }
-    </script>
     </body>
 </html>
