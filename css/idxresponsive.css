@@ -66,6 +66,7 @@
         display: flex !important;
         justify-content: center;
         margin: 1.5rem auto;
+        gap: 5px;
     }
     .juegos-mobile-btn a {
         background: rgba(255, 51, 102, 0.3);
