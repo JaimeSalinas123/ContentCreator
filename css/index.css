@@ -757,3 +757,12 @@ body {
     border: 1px solid rgba(255, 170, 68, 0.3);
 }
 
+.whatsapp {
+    background-color: #25D366; 
+}
+
+.social-icon.whatsapp:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+}
+
