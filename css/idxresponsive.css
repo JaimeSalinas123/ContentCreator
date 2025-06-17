@@ -250,3 +250,151 @@
         padding: 10px;
     }
 }
+
+@media (max-width: 1200px) {
+    .ranks {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .rankedh2 {
+        font-size: 2rem;
+        padding-bottom: 8px;
+    }
+    
+    .rankedh2::after {
+        width: 80px;
+    }
+    
+    .rankedp {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .rankeojs {
+        padding: 20px 15px;
+    }
+    
+    .ranking-title {
+        font-size: 1.8rem;
+    }
+    
+    .ranking-subtitle {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+    
+    .player-rank {
+        padding: 12px 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .player-position {
+        min-width: auto;
+        font-size: 0.9rem;
+    }
+    
+    .player-name {
+        text-align: left;
+        padding: 0;
+        width: 100%;
+        font-size: 1.1rem;
+    }
+    
+    .player-points {
+        text-align: left;
+        min-width: auto;
+        align-self: flex-end;
+        font-size: 1rem;
+        background-color: rgba(208, 112, 255, 0.2);
+        padding: 4px 10px;
+        border-radius: 20px;
+        margin-top: 5px;
+    }
+    
+    .player-rank:hover {
+        transform: none;
+        background-color: rgba(208, 112, 255, 0.1);
+    }
+    
+    .first-place,
+    .second-place,
+    .third-place {
+        border-left-width: 3px;
+    }
+    
+    .ganar-section {
+        padding: 15px;
+    }
+    
+    .ganarp {
+        font-size: 1.3rem;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .ganarul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .ganar-item {
+        width: 100%;
+        justify-content: center;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rankedh2 {
+        font-size: 1.8rem;
+    }
+    
+    .ranking-title {
+        font-size: 1.5rem;
+    }
+    
+    .ranking-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .player-rank {
+        padding: 10px 12px;
+    }
+    
+    .player-rank {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        margin: 8px 0;
+    }
+    
+    .first-place {
+        background: linear-gradient(135deg, rgba(255, 215, 0, 0.4), rgba(249, 212, 35, 0.3));
+    }
+    
+    .second-place {
+        background: linear-gradient(135deg, rgba(192, 192, 192, 0.4), rgba(224, 224, 224, 0.3));
+    }
+    
+    .third-place {
+        background: linear-gradient(135deg, rgba(205, 127, 50, 0.4), rgba(226, 167, 111, 0.3));
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.player-rank {
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+.player-rank:nth-child(1) { animation-delay: 0.1s; }
+.player-rank:nth-child(2) { animation-delay: 0.2s; }
+.player-rank:nth-child(3) { animation-delay: 0.3s; }
+.player-rank:nth-child(4) { animation-delay: 0.4s; }
+.player-rank:nth-child(5) { animation-delay: 0.5s; }
+/* ...y así sucesivamente para los demás items */
