@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/idxresponsive.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/idxresponsive.css">
+    <link rel="stylesheet" href="/css/darkmode.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
     <script src="https://unpkg.com/@heroicons/react@1.0.6/outline/index.js" defer></script>
@@ -27,13 +28,6 @@
             <span>Chorge85</span>
         </a>
         
-        <a href="#ultimo momento" class="nav-item">
-            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
-            </svg>
-            <span>Ultimas Noticias</span>
-        </a>
-        
         <a href="#donaciones" class="nav-item">
             <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -47,16 +41,15 @@
             </svg>
             <span>Arcade</span>
         </a>
+        <a href="/vistas/rankeds.html" class="nav-item">
+            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+            </svg>
+            <span>Rankeds</span>
+        </a>
     </div>
     
-    <div class="nav-right">
-        <a href="/vistas/rankeds.html" class="nav-item">
-    <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
-    </svg>
-    <span>Rankeds</span>
-</a>
-    </div>
+<div class="nav-right">
 </nav>
 
 <header id="chorge85" class="chorge-header">
@@ -130,13 +123,6 @@
         </video>
     </div>
 </div>
-<div id="ultimo momento"></div>
-        
-        <h2 class="noticas">Ultimas Noticias</h2>
-        <div id="noticias"></div>
-    </div>
-    </div>
-
 </header>
 
 <section id="donaciones" class="donaciones-section">
@@ -204,53 +190,6 @@
         </div>
     </div>
 </footer>
-
-    <script>
-// Configuración
-const UPDATE_INTERVAL = 14400000; // 4 horas
-const MAX_ARTICLES = 5;
-
-// Fuentes
-const GNEWS_API_KEY = "6ae43f6339cae2875eb3e010b4a95e3e";
-const GNEWS_URL = `https://gnews.io/api/v4/search?q=(gaming OR videojuegos)&lang=es&max=${MAX_ARTICLES}&apikey=${GNEWS_API_KEY}`;
-
-// Función principal
-async function initNoticias() {
-    const container = document.getElementById("noticias");
-    if (!container) {
-        console.error("No se encontró el contenedor de noticias");
-        return;
-    }
-
-    try {
-        const response = await fetch(GNEWS_URL);
-        if (!response.ok) throw new Error("Error en la API");
-        const data = await response.json();
-        
-        renderNoticias(data.articles, container);
-        localStorage.setItem('cachedNews', JSON.stringify(data.articles));
-    } catch (error) {
-        console.error("Error:", error);
-        showCachedNews(container);
-    }
-}
-
-function renderNoticias(articles, container) {
-    container.innerHTML = articles.slice(0, MAX_ARTICLES).map(article => `
-        <div class="noticia-card">
-            <div class="noticia-imagen">
-                <img src="${article.image || 'https://via.placeholder.com/800x450/1e031e/d070ff?text=Gaming'}" 
-                     alt="${article.title}">
-                <h3>${article.title}</h3>
-            </div>
-            <p>${article.description || 'Descripción no disponible'}</p>
-            <a href="${article.url}" target="_blank">Leer más</a>
-        </div>
-    `).join('');
-}
-
-// Ejecutar cuando el DOM esté listo
-document.addEventListener("DOMContentLoaded", initNoticias);
-    </script>
+<script src="script/modo.js"></script>
 </body>
 </html>
