@@ -308,3 +308,90 @@ body.light-mode * {
 .light-mode .ventana-juego {
     transition: all 0.3s ease;
 }
+
+/* ============ LIGHT MODE PARA RANKEDS ============ */
+.light-mode .ranks {
+    background-color: #f8f9fa;
+}
+
+.light-mode .rankedh2 {
+    color: #805ad5;
+    text-shadow: 0 0 10px rgba(128, 90, 213, 0.2);
+}
+
+.light-mode .rankedh2::after {
+    background: linear-gradient(to right, transparent, #9f7aea, transparent);
+}
+
+.light-mode .rankedp {
+    color: #4a5568;
+}
+
+.light-mode .ganarp {
+    color: #805ad5;
+}
+
+.light-mode .ganarul {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.light-mode .ganar-item {
+    background-color: rgba(107, 70, 193, 0.1);
+    color: #4a5568;
+}
+
+.light-mode .ganar-icon {
+    color: #805ad5;
+}
+
+.light-mode .ganarr {
+    color: #4a5568;
+}
+
+.light-mode .rankeojs {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d6bcfa;
+}
+
+.light-mode .ranking-title {
+    color: #805ad5;
+    text-shadow: 0 0 10px rgba(128, 90, 213, 0.2);
+}
+
+.light-mode .ranking-subtitle {
+    color: #718096;
+}
+
+.light-mode .player-rank {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #2d3748;
+    border: 1px solid #e2e8f0;
+}
+
+.light-mode .player-rank:hover {
+    background-color: rgba(159, 122, 234, 0.15);
+}
+
+/* Estilos para los primeros lugares en light mode */
+.light-mode .first-place {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(249, 212, 35, 0.1));
+    border-left: 4px solid #f6ad55;
+}
+
+.light-mode .second-place {
+    background: linear-gradient(135deg, rgba(192, 192, 192, 0.15), rgba(224, 224, 224, 0.1));
+    border-left: 4px solid #a0aec0;
+}
+
+.light-mode .third-place {
+    background: linear-gradient(135deg, rgba(205, 127, 50, 0.15), rgba(226, 167, 111, 0.1));
+    border-left: 4px solid #dd6b20;
+}
+
+/* Transiciones suaves */
+.light-mode .player-rank,
+.light-mode .ganar-item,
+.light-mode .rankeojs {
+    transition: all 0.3s ease;
+}
