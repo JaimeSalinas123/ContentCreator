@@ -301,7 +301,6 @@ body.light-mode * {
     background: #6b46c1;
 }
 
-/* Efectos de transición suaves */
 .light-mode .juegocarta,
 .light-mode .img,
 .light-mode .boton,
@@ -309,7 +308,6 @@ body.light-mode * {
     transition: all 0.3s ease;
 }
 
-/* ============ LIGHT MODE PARA RANKEDS ============ */
 .light-mode .ranks {
     background-color: #f8f9fa;
 }
@@ -490,7 +488,6 @@ body.light-mode * {
     background: #9f7aea;
 }
 
-/* ============ LIGHT MODE CORREGIDO ============ */
 .light-mode .noticia-card {
     background: #ffffff;
     border: 1px solid #e2e8f0;
@@ -498,17 +495,17 @@ body.light-mode * {
 }
 
 .light-mode .noticia-card * {
-    color: inherit !important; /* Anula el "white !important" del dark mode */
+    color: inherit !important; 
 }
 
 .light-mode .noticia-contenido h3 {
-    color: #6b46c1; /* Títulos en morado */
+    color: #6b46c1; 
 }
 
 .light-mode .noticia-contenido p {
-    color: #4a5568; /* Texto en gris oscuro */
+    color: #4a5568; 
 }
 
 .light-mode .noticia-contenido .fecha {
-    color: #9f7aea; /* Fechas en morado claro */
+    color: #9f7aea; 
 } 
