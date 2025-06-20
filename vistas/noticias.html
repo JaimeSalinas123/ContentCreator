@@ -160,7 +160,7 @@
 
         // Mostrar las más nuevas (últimas 5)
         noticias.sort((a, b) => new Date(b.fechaCreacion) - new Date(a.fechaCreacion));
-        noticias = noticias.slice(0, 5); // Asegurarse de que sean 5
+        noticias = noticias.slice(0, 5); 
 
         noticias.forEach(noticia => {
             const card = document.createElement("div");
