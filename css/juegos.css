@@ -72,8 +72,8 @@ body {
 .nav-right {
     display: flex;
     align-items: center;
+    gap: 30px;
 }
-
 .login-btn {
     padding: 0.5rem 1rem;
     border-radius: 4px;
