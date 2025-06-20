@@ -16,23 +16,21 @@
     <title>Chorge85 Gameplay</title>
 </head>
 <style>
-    /* Reset y base ya las tienes, este solo es específico para el login */
-
 #login-form {
     max-width: 350px;
     margin: 50px auto;
     padding: 25px;
-    background-color: rgba(30, 3, 30, 0.8); /* tono oscuro con transparencia */
+    background-color: rgba(30, 3, 30, 0.8); 
     border-radius: 12px;
-    box-shadow: 0 0 20px rgba(138, 43, 226, 0.6); /* sombra morada suave */
-    color: #dcd6f7; /* texto blanco lavanda claro */
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.6); 
+    color: #dcd6f7; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #login-form h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #9c4dcc; /* morado vibrante */
+    color: #9c4dcc; 
     text-shadow: 0 0 8px #9c4dccaa;
     font-weight: 700;
 }
@@ -49,9 +47,9 @@
     width: 100%;
     padding: 10px 12px;
     margin-bottom: 18px;
-    border: 1.5px solid #6a1b9a; /* morado oscuro */
+    border: 1.5px solid #6a1b9a; 
     border-radius: 8px;
-    background-color: #120012; /* igual que el body */
+    background-color: #120012; 
     color: #ddd;
     font-size: 1rem;
     transition: border-color 0.3s ease;
@@ -60,7 +58,7 @@
 #login-form input[type="text"]:focus,
 #login-form input[type="password"]:focus {
     outline: none;
-    border-color: #d070ff; /* morado claro al enfocar */
+    border-color: #d070ff; 
     box-shadow: 0 0 8px #d070ff88;
 }
 
@@ -85,7 +83,7 @@
 }
 
 #error-msg {
-    color: #f87171; /* rojo claro */
+    color: #f87171; 
     text-align: center;
     margin-top: 12px;
     font-weight: 600;
@@ -93,7 +91,6 @@
     text-shadow: 0 0 8px #f8717188;
 }
 
-/* Para que el contenido admin se vea acorde */
 #admin-content {
     max-width: 1200px;
     width: 90%;
@@ -216,12 +213,10 @@
 
     <h2 class="historial-title">Historial de Noticias Publicadas</h2>
 <div id="historial-noticias" class="historial-container">
-    <!-- Aquí se mostrarán las noticias -->
 </div>
 </div>
 <script src="/script/modo.js"></script>
   <script>
-    // Usuario y clave admin definidos aquí (puedes cambiar)
     const adminUser = "Jorge Fenix";
     const adminPass = "Marcus85";
 
@@ -237,7 +232,6 @@
       const pass = document.getElementById("password").value.trim();
 
       if (user === adminUser && pass === adminPass) {
-        // Mostrar contenido admin
         loginDiv.style.display = "none";
         adminContent.style.display = "block";
         errorMsg.style.display = "none";
@@ -251,9 +245,8 @@
     function guardarNoticia(noticia) {
         let noticias = JSON.parse(localStorage.getItem("noticias")) || [];
 
-        // Eliminar si hay más de 4 (porque vamos a insertar una nueva)
         if (noticias.length >= 5) {
-            // Ordenar por fecha de creación ascendente (más antigua primero)
+
             noticias.sort((a, b) => new Date(a.fechaCreacion) - new Date(b.fechaCreacion));
             noticias.shift(); // Elimina la más antigua
         }
