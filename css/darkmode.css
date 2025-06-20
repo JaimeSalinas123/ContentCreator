@@ -395,3 +395,120 @@ body.light-mode * {
 .light-mode .rankeojs {
     transition: all 0.3s ease;
 }
+
+.light-mode .inc {
+    background-color: transparent;
+}
+
+.light-mode .inccuadro {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 8px 32px rgba(107, 70, 193, 0.1);
+}
+
+.light-mode .inc-title {
+    color: #6b46c1;
+    text-shadow: 0 0 8px rgba(107, 70, 193, 0.1);
+}
+
+.light-mode .form-group label {
+    color: #4a5568;
+}
+
+.light-mode .inc-input, 
+.light-mode .inc-textarea {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #e2e8f0;
+    color: #2d3748;
+}
+
+.light-mode .inc-input:focus, 
+.light-mode .inc-textarea:focus {
+    border-color: #9f7aea;
+    box-shadow: 0 0 0 3px rgba(159, 122, 234, 0.2);
+}
+
+.light-mode .upload-text {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px dashed #cbd5e0;
+    color: #4a5568;
+}
+
+.light-mode .file-upload:hover .upload-text {
+    border-color: #9f7aea;
+    color: #6b46c1;
+}
+
+.light-mode .upload-icon {
+    color: #718096;
+}
+
+.light-mode .or-divider {
+    color: #a0aec0;
+}
+
+.light-mode .inc-submit {
+    background: linear-gradient(135deg, #9f7aea 0%, #805ad5 100%);
+    color: white;
+}
+
+.light-mode .inc-submit:hover {
+    box-shadow: 0 5px 15px rgba(159, 122, 234, 0.4);
+}
+
+.light-mode .noticia-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.light-mode .noticia-titulo {
+    color: #6b46c1;
+}
+
+.light-mode .noticia-desc {
+    color: #4a5568;
+}
+
+.light-mode .noticia-fecha {
+    color: #718096;
+}
+
+.light-mode .no-noticias svg {
+    color: #6b46c1;
+}
+
+.light-mode .no-noticias p {
+    color: #718096;
+}
+
+.light-mode .btn-crear {
+    background: #805ad5;
+}
+
+.light-mode .btn-crear:hover {
+    background: #9f7aea;
+}
+
+/* ============ LIGHT MODE CORREGIDO ============ */
+.light-mode .noticia-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.light-mode .noticia-card * {
+    color: inherit !important; /* Anula el "white !important" del dark mode */
+}
+
+.light-mode .noticia-contenido h3 {
+    color: #6b46c1; /* Títulos en morado */
+}
+
+.light-mode .noticia-contenido p {
+    color: #4a5568; /* Texto en gris oscuro */
+}
+
+.light-mode .noticia-contenido .fecha {
+    color: #9f7aea; /* Fechas en morado claro */
+} 
