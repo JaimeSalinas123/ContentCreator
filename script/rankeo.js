@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     const rankeojs = document.querySelector('.rankeojs');
     const players = [
-        { name: "꧁爪卂ㄒㄒ卄乇山꧂ ", points: 2 },
+        { name: "꧁爪卂ㄒㄒ卄乇山꧂ ", points: 3 },
         { name: "kathe 🤡🐶 · ", points: 1 },
-        { name: "OldSchoolGamer ", points: 1 },
-        { name: "elbauser", points: 1 },
-        { name: "𝐴.𝑙𝑜𝑝𝑒𝑧∛", points: 1 },
+        { name: "Osgamer ", points: 3 },
+        { name: "elbauser", points: 2 },
+        { name: "𝐴.𝑙𝑜𝑝𝑒𝑧∛", points: 2 },
         { name: "&", points: 0 },
         { name: "&", points: 0 },
         { name: "&", points: 0 },
