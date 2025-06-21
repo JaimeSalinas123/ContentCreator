@@ -301,6 +301,7 @@ body.light-mode * {
     background: #6b46c1;
 }
 
+/* Efectos de transición suaves */
 .light-mode .juegocarta,
 .light-mode .img,
 .light-mode .boton,
@@ -308,6 +309,7 @@ body.light-mode * {
     transition: all 0.3s ease;
 }
 
+/* ============ LIGHT MODE PARA RANKEDS ============ */
 .light-mode .ranks {
     background-color: #f8f9fa;
 }
@@ -488,6 +490,7 @@ body.light-mode * {
     background: #9f7aea;
 }
 
+/* ============ LIGHT MODE CORREGIDO ============ */
 .light-mode .noticia-card {
     background: #ffffff;
     border: 1px solid #e2e8f0;
@@ -495,17 +498,88 @@ body.light-mode * {
 }
 
 .light-mode .noticia-card * {
-    color: inherit !important; 
+    color: inherit !important; /* Anula el "white !important" del dark mode */
 }
 
 .light-mode .noticia-contenido h3 {
-    color: #6b46c1; 
+    color: #6b46c1; /* Títulos en morado */
 }
 
 .light-mode .noticia-contenido p {
-    color: #4a5568; 
+    color: #4a5568; /* Texto en gris oscuro */
 }
 
 .light-mode .noticia-contenido .fecha {
-    color: #9f7aea; 
+    color: #9f7aea; /* Fechas en morado claro */
 } 
+/* Light Mode News Container */
+.light-mode #noticias-container {
+  background-color: transparent;
+}
+
+/* Light Mode News Item */
+.light-mode .noticia {
+  background-color: #ffffff;
+  color: #4a5568;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.light-mode .noticia:hover {
+  border-left: 3px solid #9f7aea;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Light Mode News Image */
+.light-mode .noticia-img {
+  filter: brightness(0.98);
+}
+
+/* Light Mode News Content */
+.light-mode .noticia-contenido h3 {
+  color: #6b46c1;
+  text-shadow: 0 0 3px rgba(107, 70, 193, 0.1);
+}
+
+.light-mode .noticia-contenido p {
+  color: #4a5568;
+}
+
+.light-mode .noticia-contenido .fecha {
+  color: #9f7aea;
+}
+
+/* Light Mode Read More Link */
+.light-mode .leer-mas {
+  color: #805ad5;
+}
+
+.light-mode .leer-mas:hover {
+  color: #6b46c1;
+  text-shadow: 0 0 3px rgba(107, 70, 193, 0.2);
+}
+
+/* Light Mode Animations */
+.light-mode .noticia {
+  animation: fadeInLight 0.5s ease forwards;
+}
+
+@keyframes fadeInLight {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px);
+    background-color: rgba(255, 255, 255, 0);
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0);
+    background-color: #ffffff;
+  }
+}
+
+/* Light Mode Transitions */
+.light-mode .noticia,
+.light-mode .noticia-img,
+.light-mode .noticia-contenido * {
+  transition: all 0.3s ease;
+}
