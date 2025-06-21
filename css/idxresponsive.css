@@ -390,5 +390,19 @@ body.light-mode .nav-item::after {
     display: flex !important;
 }
 
+@media (max-width: 768px) {
+  .noticia {
+    flex-direction: column;
+  }
+  
+  .noticia-img {
+    width: 100%;
+    height: 180px;
+  }
+  
+  #noticias-container {
+    padding: 15px;
+  }
+}
 
 
