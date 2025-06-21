@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { name: "kathe 🤡🐶 · ", points: 1 },
         { name: "Osgamer ", points: 3 },
         { name: "elbauser", points: 2 },
-        { name: "𝐴.𝑙𝑜𝑝𝑒𝑧∛", points: 2 },
+        { name: "𝐴.𝑙𝑜𝑝𝑒𝑧∛", points: 4 },
         { name: "&", points: 0 },
         { name: "&", points: 0 },
         { name: "&", points: 0 },
