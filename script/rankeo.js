@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
         { name: "Osgamer ", points: 3 },
         { name: "elbauser", points: 2 },
         { name: "𝐴.𝑙𝑜𝑝𝑒𝑧∛", points: 4 },
-        { name: "&", points: 0 },
-        { name: "&", points: 0 },
+        { name: "eliza2004", points: 3 },
+        { name: "loghairmark", points: 3 },
         { name: "&", points: 0 },
         { name: "&", points: 0 },
         { name: "&", points: 0 }
