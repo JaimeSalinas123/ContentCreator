@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const players = [
         { name: "꧁爪卂ㄒㄒ卄乇山꧂ ", points: 5 },
         { name: "kathe 🤡🐶 · ", points: 1 },
-        { name: "Osgamer ", points: 3 },
         { name: "elbauser", points: 2 },
         { name: "𝐴.𝑙𝑜𝑝𝑒𝑧∛", points: 4 },
         { name: "eliza2004", points: 3 },
