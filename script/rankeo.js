@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
         { name: "loghairmark", points: 3 },
         { name: "Enrique Oseguedx", points: 1 },
         { name: "&", points: 0 },
-        { name: "&", points: 0 }
         { name: "&", points: 0 },
+        { name: "&", points: 0 }
     ];
     
     function showRanking() {
