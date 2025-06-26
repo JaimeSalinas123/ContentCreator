@@ -1,15 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
     const rankeojs = document.querySelector('.rankeojs');
     const players = [
-        { name: "꧁爪卂ㄒㄒ卄乇山꧂ ", points: 5 },
-        { name: "kathe 🤡🐶 · ", points: 1 },
+        { name: "꧁爪卂ㄒㄒ卄乇山꧂ ", points: 7 },
+        { name: "kathe 🤡🐶 · ", points: 2 },
         { name: "elbauser", points: 2 },
-        { name: "𝐴.𝑙𝑜𝑝𝑒𝑧∛", points: 4 },
-        { name: "eliza2004", points: 3 },
+        { name: "𝐴.𝑙𝑜𝑝𝑒𝑧∛", points: 5 },
+        { name: "eliza2004", points: 4 },
         { name: "loghairmark", points: 3 },
-        { name: "&", points: 0 },
+        { name: "Enrique Oseguedx", points: 1 },
         { name: "&", points: 0 },
         { name: "&", points: 0 }
+        { name: "&", points: 0 },
     ];
     
     function showRanking() {
