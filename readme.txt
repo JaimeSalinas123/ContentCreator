@@ -23,4 +23,13 @@ Igualmente ahi te comento mas a detalle para que entendas como poner cada cosa.
 Por el momento no podemos poner mapa, tienda etc ya que epic games ha borrado toda api que alguna empresas dan para mostrar lo que esta fortnite(api basicamente es
 informacion que tiene otra pagina web yo copio el codigo que ellos otorgan que seria la api y la informacion de ellos se muestra en mi pagina web) y mencionarte que lo que hacen 
 muchas personas y empresas es scrapping que basicamente se meten en los archivos del juego, esto es ilegal sin embargo epic si autoriza a personas y paginas como lo es fortnite.gg 
+
 para que lo hagan, como somos pobres no podemos hacer eso.
+
+rankeds copiar y pegar
+    {
+      "nombre": "Por confirmar",
+      "puntos": 0
+    }
+
+noticias copiar y pehar
