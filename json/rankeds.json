@@ -2,7 +2,7 @@
   "usuarios": [
     {
       "nombre": "matthew8665",
-      "puntos": 2
+      "puntos": 5
     },
     {
       "nombre": "CCharles503",
@@ -10,23 +10,23 @@
     },
     {
       "nombre": "jaimenelsonlopezsalinas5429",
+      "puntos": 2
+    },
+    {
+      "nombre": "AdalEmirAlvarez",
+      "puntos": 5
+    },
+    {
+      "nombre": "avenamosh",
       "puntos": 1
     },
     {
-      "nombre": "Por confirmar",
-      "puntos": 0
+      "nombre": "danielmarenco9564",
+      "puntos": 1
     },
     {
-      "nombre": "Por confirmar",
-      "puntos": 0
-    },
-    {
-      "nombre": "Por confirmar",
-      "puntos": 0
-    },
-    {
-      "nombre": "Por confirmar",
-      "puntos": 0
+      "nombre": "Dalted18",
+      "puntos": 1
     },
     {
       "nombre": "Por confirmar",
@@ -42,4 +42,5 @@
     }
   ]
 }
+
 
